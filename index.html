@@ -5,11 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loan Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
 
 </head>
 
 <body>
-    <h1>Loan Calculator</h1>
+
+
+    <!-- input -->
+
+    <div class="hero min-h-screen bg-base-100">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="text-center lg:text-left">
+                <div class=" flex flex-row text-center lg:text-center">
+                    <h1 class="text-center text-5xl font-bold mb-8">Monthly EMI:</h1>
+                    <h1 class="mEMI text-center text-5xl font-bold mb-8"> 12000 </h1>
+                </div>
+
+                <div class="stats shadow">
+
+
+                    <div class="stat place-items-center">
+                        <div class="stat-title text-lg mb-5">Principal Amount </div>
+                        <div class="PA stat-value">31K</div>
+
+                    </div>
+
+                    <div class="stat place-items-center">
+                        <div class="stat-title mb-5">Interest Amount</div>
+                        <div class="IA stat-value text-secondary">4,200</div>
+
+                    </div>
+
+                    <div class="stat place-items-center">
+                        <div class="stat-title mb-5">Total Amount</div>
+                        <div class="TA stat-value">1,200</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="card flex flex  w-full  shadow-2xl bg-base-100">
+                <div class="card-body flex flex-col justify-between">
+                    <div class="form-control flex flex-row justify-between mb-5">
+                        <label class="label">
+                  <span class="label-text">Loan Amount </span>
+                </label>
+                        <input type="text" class="input input-bordered" />
+                    </div>
+                    <div class="form-control flex flex-row justify-between mb-5">
+                        <label class="label">
+                  <span class="label-text">Loan Tenure</span>
+                </label>
+                        <input type="text" class="input input-bordered" />
+
+                    </div>
+                    <div class="form-control flex flex-row justify-between mb-5">
+                        <label class="label">
+                  <span class="label-text">Rate of Interest</span>
+                </label>
+                        <input type="text" class="input input-bordered" />
+
+                    </div>
+                    <div class="form-control mt-6">
+                        <button class="btn btn-primary">Calculate EMI</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <script src="script.js"></script>
 </body>
 
