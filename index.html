@@ -17,32 +17,41 @@
 
     <!-- input -->
 
-    <div class="hero min-h-screen bg-base-100">
+
+    <div class="hero min-h-screen bg-gray-800">
+
+
+
         <div class="hero-content flex-col lg:flex-row-reverse">
-            <div class="text-center lg:text-left">
-                <div class=" flex flex-row text-center lg:text-center">
-                    <h1 class="text-center text-5xl font-bold mb-8">Monthly EMI:</h1>
+
+
+
+            <div class="ml-20 text-center lg:text-left">
+                <div class=" flex flex-row text-center mb-10 justify-center lg:text-center">
+                    <h1 class="text-center text-5xl font-bold mb-8">Monthly EMI : </h1>
                     <h1 class="mEMI text-center text-5xl font-bold mb-8"> 12000 </h1>
                 </div>
+
+
 
                 <div class="stats shadow">
 
 
                     <div class="stat place-items-center">
-                        <div class="stat-title text-lg mb-5">Principal Amount </div>
-                        <div class="PA stat-value">31K</div>
+                        <div class="stat-title mt-4 text-xl mb-5">Principal Amount </div>
+                        <div class="PA stat-value mb-4">31K</div>
 
                     </div>
 
                     <div class="stat place-items-center">
-                        <div class="stat-title mb-5">Interest Amount</div>
-                        <div class="IA stat-value text-secondary">4,200</div>
+                        <div class="stat-title mt-4 mb-5 text-xl">Interest Amount</div>
+                        <div class="IA stat-value mb-4 text-secondary">4,200</div>
 
                     </div>
 
                     <div class="stat place-items-center">
-                        <div class="stat-title mb-5">Total Amount</div>
-                        <div class="TA stat-value">1,200</div>
+                        <div class="stat-title mt-4 mb-5 text-xl">Total Amount</div>
+                        <div class="TA stat-value mb-4">1,200</div>
 
                     </div>
 
@@ -53,26 +62,26 @@
                 <div class="card-body flex flex-col justify-between">
                     <div class="form-control flex flex-row justify-between mb-5">
                         <label class="label">
-                  <span class="label-text">Loan Amount </span>
+                  <span class="label-text text-xl">Loan Amount </span>
                 </label>
-                        <input type="text" class="input input-bordered" />
+                        <input type="text" class=" loanAmount input input-bordered" />
                     </div>
                     <div class="form-control flex flex-row justify-between mb-5">
                         <label class="label">
-                  <span class="label-text">Loan Tenure</span>
+                  <span class="label-text text-xl">Loan Tenure</span>
                 </label>
-                        <input type="text" class="input input-bordered" />
+                        <input type="text" class=" loanTenure input input-bordered" />
 
                     </div>
                     <div class="form-control flex flex-row justify-between mb-5">
                         <label class="label">
-                  <span class="label-text">Rate of Interest</span>
+                  <span class="label-text text-xl">Rate of Interest</span>
                 </label>
-                        <input type="text" class="input input-bordered" />
+                        <input type="text" class=" ROI input input-bordered" />
 
                     </div>
                     <div class="form-control mt-6">
-                        <button class="btn btn-primary">Calculate EMI</button>
+                        <button class="EMICalc btn btn-primary">Calculate EMI</button>
                     </div>
                 </div>
             </div>
