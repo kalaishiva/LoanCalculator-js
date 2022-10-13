@@ -24,8 +24,12 @@ function calculate() {
     /*   
 
     */
-    //let ratePowerMonth = Math.pow((1 + rateOfInterest), loanTenure);
-    let ratePowerMonthTop = Math.pow((1 + 0.0075), 60);
+    //rateOfInterest
+    rateOfInterest = rateOfInterest.value;
+    rateOfInterest = (rateOfInterest / 12) / 100;
+    console.log(rateOfInterest);
+
+    let ratePowerMonthTop = Math.pow((1 + rateOfInterest), parseInt(loanTenure.value));
     let ratePowerMonthBottom = ratePowerMonthTop - 1;
 
     let ratePowerMonth = ratePowerMonthTop / ratePowerMonthBottom;
@@ -34,15 +38,12 @@ function calculate() {
     console.log(ratePowerMonthBottom);
     console.log(ratePowerMonth);
 
-    //rateOfInterest
-    rateOfInterest = rateOfInterest.value;
-    rateOfInterest = (rateOfInterest / 12) / 100;
-    //console.log(rateOfInterest);
+
 
 
     //emi per month
     let emi;
-    emi = Math.floor((principalAmount.innerHTML) * rateOfInterest * ratePowerMonth);
+    emi = Math.floor(parseFloat(principalAmount.innerHTML) * rateOfInterest * ratePowerMonth);
     // console.log(emi);
     monthlyEmi.innerHTML = emi;
 
@@ -50,8 +51,12 @@ function calculate() {
     loanTenure = loanTenure.value;
     let totalamt = emi * loanTenure;
     totalAmount.innerHTML = totalamt;
+    console.log(totalAmount);
+    //  console.log(principalAmount.innerHTML); */
 
     //Interest Amount
+    let interestAmt = parseFloat(totalAmount.innerHTML) - parseFloat(principalAmount.innerHTML);
+    interestAmount.innerHTML = interestAmt.toLocaleString();
 
 
 }
