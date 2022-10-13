@@ -17,40 +17,31 @@
 
     <!-- input -->
 
-
-    <div class="hero min-h-screen bg-gray-800">
-
-
-
-        <div class="hero-content flex-col lg:flex-row-reverse">
-
-
-
-            <div class="ml-20 text-center lg:text-left">
-                <div class=" flex flex-row text-center mb-10 justify-center lg:text-center">
+    <div class="flex justify-center items-center h-[20%]">
+        <h1 class=" text-5xl font-bold   title-font  text-gray-100 ">Loan Calculator</h1>
+    </div>
+    <div class="hero h-[60%] min-h-0  bg-stone-200">
+        <div class="hero-content flex-col lg:flex-row-reverse ">
+            <div class="ml-20 text-center lg:text-left ">
+                <div class=" flex flex-row text-center  text-[#6419E6] mb-10 justify-center lg:text-center ">
                     <h1 class="text-center text-5xl font-bold mb-8">Monthly EMI : </h1>
                     <h1 class="mEMI text-center text-5xl font-bold mb-8"> 12000 </h1>
                 </div>
 
-
-
-                <div class="stats shadow">
-
-
+                <div class="stats shadow ">
                     <div class="stat place-items-center">
-                        <div class="stat-title mt-4 text-xl mb-5">Principal Amount </div>
+                        <div class="stat-title mt-4 text-xl mb-5  text-slate-100">Principal Amount </div>
                         <div class="PA stat-value mb-4">31K</div>
-
                     </div>
 
                     <div class="stat place-items-center">
-                        <div class="stat-title mt-4 mb-5 text-xl">Interest Amount</div>
+                        <div class="stat-title mt-4 mb-5 text-xl text-slate-100">Interest Amount</div>
                         <div class="IA stat-value mb-4 text-secondary">4,200</div>
 
                     </div>
 
                     <div class="stat place-items-center">
-                        <div class="stat-title mt-4 mb-5 text-xl">Total Amount</div>
+                        <div class="stat-title mt-4 mb-5 text-xl text-slate-100">Total Amount</div>
                         <div class="TA stat-value mb-4">1,200</div>
 
                     </div>
@@ -58,30 +49,30 @@
                 </div>
 
             </div>
-            <div class="card flex flex  w-full  shadow-2xl bg-base-100">
+            <div class="card flex flex  w-full   bg-base-100  shadow-slate-700 ">
                 <div class="card-body flex flex-col justify-between">
                     <div class="form-control flex flex-row justify-between mb-5">
                         <label class="label">
-                  <span class="label-text text-xl">Loan Amount </span>
+                  <span class="label-text text-2xl ">Loan Amount </span>
                 </label>
-                        <input type="text" class=" loanAmount input input-bordered" />
+                        <input type="text" class=" loanAmount input input-bordered border border-1 border-green-100" />
                     </div>
                     <div class="form-control flex flex-row justify-between mb-5">
                         <label class="label">
-                  <span class="label-text text-xl">Loan Tenure</span>
+                  <span class="label-text text-2xl">Loan Tenure</span>
                 </label>
-                        <input type="text" class=" loanTenure input input-bordered" />
+                        <input type="text" class=" loanTenure input input-bordered border border-1 border-green-100" />
 
                     </div>
                     <div class="form-control flex flex-row justify-between mb-5">
                         <label class="label">
-                  <span class="label-text text-xl">Rate of Interest</span>
+                  <span class="label-text text-2xl mr-2"> Rate of Interest </span>
                 </label>
-                        <input type="text" class=" ROI input input-bordered" />
+                        <input type="text" class=" ROI input input-bordered border border-1 border-green-100" />
 
                     </div>
                     <div class="form-control mt-6">
-                        <button class="EMICalc btn btn-primary">Calculate EMI</button>
+                        <button class="EMICalc btn btn-primary  text-xl">Calculate EMI</button>
                     </div>
                 </div>
             </div>
