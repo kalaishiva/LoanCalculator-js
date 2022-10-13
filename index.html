@@ -24,8 +24,8 @@
         <div class="hero-content flex-col lg:flex-row-reverse ">
             <div class="ml-20 text-center lg:text-left ">
                 <div class=" flex flex-row text-center  text-[#6419E6] mb-10 justify-center lg:text-center ">
-                    <h1 class="text-center text-5xl font-bold mb-8">Monthly EMI : </h1>
-                    <h1 class="montlyEmi text-center text-5xl font-bold mb-8"> 0 </h1>
+                    <h1 class="text-center text-5xl font-bold pr-4 mb-8">Monthly EMI : </h1>
+                    <h1 class="monthlyEmi text-center text-secondary text-5xl font-bold  mb-8"> 0 </h1>
                 </div>
 
                 <div class="stats shadow ">
@@ -55,24 +55,24 @@
                         <label class="label">
                           <span class="label-text text-2xl ">Loan Amount </span>
                           </label>
-                        <input type="text" class=" loanAmount input input-bordered border border-1 border-green-100" />
+                        <input type="text" class="loanAmount input input-bordered border border-1 border-green-100" />
                     </div>
                     <div class="form-control flex flex-row justify-between mb-5">
                         <label class="label">
                   <span class="label-text text-2xl">Loan Tenure</span>
                 </label>
-                        <input type="text" class=" loanTenure input input-bordered border border-1 border-green-100" />
+                        <input type="text" class="loanTenure input input-bordered border border-1 border-green-100" />
 
                     </div>
                     <div class="form-control flex flex-row justify-between mb-5">
                         <label class="label">
                   <span class="label-text text-2xl mr-2"> Rate of Interest </span>
                 </label>
-                        <input type="text" class=" rateOfInterest input input-bordered border border-1 border-green-100" />
+                        <input type="text" class="rateOfInterest input input-bordered border border-1 border-green-100" />
 
                     </div>
                     <div class="form-control mt-6">
-                        <button onclick="" class="emiCalcBtn btn btn-primary  text-xl">Calculate EMI</button>
+                        <button onclick="calculate()" class="emiCalcBtn btn btn-primary  text-xl">Calculate EMI</button>
                     </div>
                 </div>
             </div>
